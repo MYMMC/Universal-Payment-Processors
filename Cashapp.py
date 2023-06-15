@@ -5,7 +5,7 @@ import sqlite3
 from datetime import timedelta
 
 # Lines to edit
-# 62: One Sec Mail API Username
+# 65: One Sec Mail API Username
 # 95: Create read.txt file
 # 104/105: Should be your customers cashtag and expected amount
 
@@ -62,7 +62,7 @@ def cashApp(expected, cashtag):
 
 
 def check():
-    arg1 = '0JONutOZP11AItKM6R1'  # Your one sec mail username
+    arg1 = 'api'  # Your one sec mail username
     mails = requests.get(
         'https://www.1secmail.com/api/v1/?action=getMessages&login=' + arg1 + '&domain=1secmail.com').json()
     for mail in mails:
